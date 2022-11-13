@@ -6,7 +6,7 @@
 #    By: jsebasti <jsebasti@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/12 17:21:25 by jsebasti          #+#    #+#              #
-#    Updated: 2022/11/12 17:21:25 by jsebasti         ###   ########.fr        #
+#    Updated: 2022/11/13 22:36:02 by jsebasti         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ SRC= push_swap \
 	Libft/ft_itoa \
 
 # ----Libft----
-LFTDIR=./Libft
+Make -C Libft
 # =============
 
 # -------------
