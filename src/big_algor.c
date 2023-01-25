@@ -1,0 +1,96 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   big_algor.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jsebasti <jsebasti@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/11/24 06:45:22 by jsebasti          #+#    #+#             */
+/*   Updated: 2022/12/01 19:53:56 by jsebasti         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "push_swap.h"
+#include "moves.h"
+
+static void	ft_sort_aux(t_stack *a, t_stack *b, int cut);
+static void	ft_at_b_stack(t_stack *b, int idx, int cut);
+static void	ft_backto_a(t_stack *a, t_stack *b);
+static int	ft_get_maxidx(t_stack *stack);
+
+void	ft_sort_bigger(t_stack *a, t_stack *b, int chunks)
+{
+	int	idx;
+	int	count;
+	int	cut;
+
+	count = 0;
+	cut = a->len / chunks;
+	while (++count < chunks)
+	{
+		idx = 0;
+		while (idx < cut)
+		{
+			if (a->first->idx < cut)
+			{
+				ft_pb(a, b);
+				ft_at_b_stack(b, b->first->idx, cut);
+				idx++;
+			}
+			else
+				ft_ra(a);
+		}
+		indexer(a);
+	}
+	ft_sort_aux(a, b, cut);
+}
+
+void	ft_sort_aux(t_stack *a, t_stack *b, int cut)
+{
+	while (a->len)
+	{
+		ft_pb(a, b);
+		ft_at_b_stack(b, b->first->idx, cut);
+	}
+	indexer(b);
+	ft_backto_a(a, b);
+}
+
+void	ft_backto_a(t_stack *a, t_stack *b)
+{
+	while (b->len)
+	{
+		ft_putfirst_b(ft_get_maxidx(b), a, b);
+		ft_pa(a, b);
+		if (a->len > 2 && a->first->idx != 0
+			&& a->first->next->idx == (a->first->idx - 1))
+			ft_sa(a);
+		if (a->len > 1 && a->first->idx != 0
+			&& a->last->idx < a->last->back->idx)
+			ft_rra(a);
+	}
+}
+
+void	ft_at_b_stack(t_stack *b, int idx, int cut)
+{
+	if (idx < cut / 2)
+		ft_rb(b);
+}
+
+int	ft_get_maxidx(t_stack *stack)
+{
+	t_elems	*tmp;
+	int		idx;
+
+	tmp = stack->first;
+	idx = stack->len - 1;
+	while (tmp->next)
+	{
+		if (tmp->idx == (idx + 1))
+			return (stack->len);
+		tmp = tmp->next;
+	}
+	if (tmp->idx == (idx + 1))
+		return (stack->len);
+	return (idx);
+}
