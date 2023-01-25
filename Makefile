@@ -6,7 +6,7 @@
 #    By: jsebasti <jsebasti@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/12 17:21:25 by jsebasti          #+#    #+#              #
-#    Updated: 2023/01/25 05:41:29 by jsebasti         ###   ########.fr        #
+#    Updated: 2023/01/25 05:49:10 by jsebasti         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -68,14 +68,14 @@ $(NAME)::
 -include $(DEP)
 
 clean:
-	$(MAKE) clean -C $(LIB_M)
-	$(MAKE) clean -C $(PRINTF_M)
+	@$(MAKE) clean -C $(LIB_M)
+	@$(MAKE) clean -C $(PRINTF_M)
 	$(RM) $(OBJ_DIR)
 	$(RM) $(NAME)
 
 fclean:
-	$(MAKE) fclean -C $(LIB_M)
-	$(MAKE) fclean -C $(PRINTF_M)
+	@$(MAKE) fclean -C $(LIB_M)
+	@$(MAKE) fclean -C $(PRINTF_M)
 	$(RM) $(OBJ_DIR)
 	$(RM) $(NAME)
 
