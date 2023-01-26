@@ -6,7 +6,7 @@
 /*   By: jsebasti <jsebasti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/26 14:15:16 by jsebasti          #+#    #+#             */
-/*   Updated: 2022/12/01 19:53:49 by jsebasti         ###   ########.fr       */
+/*   Updated: 2023/01/25 06:36:41 by jsebasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,7 @@ static int	ft_moves_director(t_stack *stack, int nbr, ssize_t *mov);
 static void	ft_putfirst_b1_aux(t_stack *a, t_stack *b, int nbr, ssize_t mov);
 static void	ft_putfirst_b2_aux(t_stack *a, t_stack *b, int nbr, ssize_t mov);
 
-void
-	ft_putfirst_a(t_stack *a, int nbr)
+void	ft_putfirst_a(t_stack *a, int nbr)
 {
 	ssize_t	mov;
 	ssize_t	rot;
@@ -27,7 +26,7 @@ void
 	idx = 0;
 	mov = 0;
 	rot = ft_moves_director(a, nbr, &mov);
-	if (rot == ONTOP || rot == ERR_NUM)
+	if (rot == ONTOP || rot == -1)
 		return ;
 	if (rot == ROTATE)
 		while (++idx <= mov)
@@ -37,15 +36,14 @@ void
 			ft_rra(a);
 }
 
-void
-	ft_putfirst_b(int nbr, t_stack *a, t_stack *b)
+void	ft_putfirst_b(int nbr, t_stack *a, t_stack *b)
 {
 	ssize_t	mov;
 	ssize_t	rot;
 
 	mov = 0;
 	rot = ft_moves_director(b, nbr, &mov);
-	if (rot == ONTOP || rot == ERR_NUM)
+	if (rot == ONTOP || rot == -1)
 		return ;
 	if (rot == ROTATE)
 		ft_putfirst_b1_aux(a, b, nbr, mov);
@@ -53,8 +51,7 @@ void
 		ft_putfirst_b2_aux(a, b, nbr, mov);
 }
 
-static void
-	ft_putfirst_b1_aux(t_stack *a, t_stack *b, int nbr, ssize_t mov)
+static void	ft_putfirst_b1_aux(t_stack *a, t_stack *b, int nbr, ssize_t mov)
 {
 	ssize_t	idx;
 
@@ -73,8 +70,7 @@ static void
 	}
 }
 
-static void
-	ft_putfirst_b2_aux(t_stack *a, t_stack *b, int nbr, ssize_t mov)
+static void	ft_putfirst_b2_aux(t_stack *a, t_stack *b, int nbr, ssize_t mov)
 {
 	ssize_t	idx;
 
@@ -97,8 +93,7 @@ static void
 	}
 }
 
-static int
-	ft_moves_director(t_stack *stack, int nbr, ssize_t *mov)
+static int	ft_moves_director(t_stack *stack, int nbr, ssize_t *mov)
 {
 	t_elems	*first;
 	ssize_t	pos;
@@ -120,5 +115,5 @@ static int
 		*mov = stack->len - pos;
 		return (RROTATE);
 	}
-	return (ERR_NUM);
+	return (-1);
 }

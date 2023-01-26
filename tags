@@ -1,0 +1,183 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BONUS_O	Libs/Libft/Makefile	/^BONUS_O	= 	$(BONUS_S:.c=.o)$/;"	m
+BONUS_S	Libs/Libft/Makefile	/^BONUS_S = 	ft_lstnew.c \\$/;"	m
+CC	Libs/Libft/Makefile	/^CC	= 	gcc$/;"	m
+CFLAGS	Libs/printf/Makefile	/^CFLAGS = -Werror -Wall -Wextra -W -O3 -Ofast $/;"	m
+CFLAGS	Makefile	/^CFLAGS = -Werror -Wextra -Wall -W -O3 -Ofast$/;"	m
+DEP	Libs/printf/Makefile	/^DEP	= $(addsuffix .d, $(basename $(OBJ)))$/;"	m
+DEP	Makefile	/^DEP = $(addsuffix .d, $(basename $(OBJ)))$/;"	m
+FLAGS	Libs/Libft/Makefile	/^FLAGS	= 	-Wall -Wextra -Werror$/;"	m
+FT_PRINTF_H	Libs/printf/ft_printf.h	14;"	d
+HEADER	Libs/Libft/Makefile	/^HEADER	=	libft.h$/;"	m
+HEADER	Libs/printf/Makefile	/^HEADER = ft_printf.h$/;"	m
+INC_DIR	Makefile	/^INC_DIR		= inc\/$/;"	m
+INS_PA	inc/moves.h	17;"	d
+INS_PB	inc/moves.h	18;"	d
+INS_RA	inc/moves.h	22;"	d
+INS_RB	inc/moves.h	23;"	d
+INS_RR	inc/moves.h	24;"	d
+INS_RRA	inc/moves.h	25;"	d
+INS_RRB	inc/moves.h	26;"	d
+INS_RRR	inc/moves.h	27;"	d
+INS_SA	inc/moves.h	19;"	d
+INS_SB	inc/moves.h	20;"	d
+INS_SS	inc/moves.h	21;"	d
+LIB	Makefile	/^LIB			= Libs\/Libft\/libft.a$/;"	m
+LIBC	Libs/Libft/Makefile	/^LIBC	= 	ar -rcs$/;"	m
+LIBC	Libs/printf/Makefile	/^LIBC = ar -rcs$/;"	m
+LIBC	Makefile	/^LIBC = ar -rcs$/;"	m
+LIBFT_H	Libs/Libft/libft.h	14;"	d
+LIB_M	Makefile	/^LIB_M 		= Libs\/Libft\/$/;"	m
+MKFL	Libs/printf/Makefile	/^MKFL	= Makefile$/;"	m
+MKFL	Makefile	/^MKFL		= Makefile$/;"	m
+MOVES_H	inc/moves.h	14;"	d
+MP	Libs/printf/Makefile	/^MP	= mkdir -p$/;"	m
+MP	Makefile	/^MP = mkdir -p$/;"	m
+NAME	Libs/Libft/Makefile	/^NAME	=	libft.a$/;"	m
+NAME	Libs/printf/Makefile	/^NAME = libftprintf.a$/;"	m
+NAME	Makefile	/^NAME		= push_swap$/;"	m
+OBJ	Libs/printf/Makefile	/^OBJ = $(addprefix $(OBJ_DIR), $(SRC:.c=.o))$/;"	m
+OBJ	Makefile	/^OBJ = $(addprefix $(OBJ_DIR), $(SRC:.c=.o))$/;"	m
+OBJS	Libs/Libft/Makefile	/^OBJS	= 	$(SRCS:.c=.o)$/;"	m
+OBJ_DIR	Libs/printf/Makefile	/^OBJ_DIR	= obj\/$/;"	m
+OBJ_DIR	Makefile	/^OBJ_DIR		= obj\/$/;"	m
+ONTOP	inc/moves.h	32;"	d
+PRINTF	Makefile	/^PRINTF		= Libs\/printf\/libftprintf.a$/;"	m
+PRINTF_M	Makefile	/^PRINTF_M	= Libs\/printf\/$/;"	m
+PUSH_SWAP_H	inc/push_swap.h	14;"	d
+PW_HEADER	Makefile	/^PW_HEADER	= $(INC_DIR)\/push_swap.h$/;"	m
+RM	Libs/Libft/Makefile	/^RM	= 	rm -rf$/;"	m
+RM	Libs/printf/Makefile	/^RM = rm -rf$/;"	m
+RM	Makefile	/^RM = rm -rf$/;"	m
+ROTATE	inc/moves.h	30;"	d
+RROTATE	inc/moves.h	31;"	d
+SRC	Libs/printf/Makefile	/^SRC =	ft_printf.c \\$/;"	m
+SRC	Makefile	/^SRC	=	src\/big_algor.c 	\\$/;"	m
+SRCS	Libs/Libft/Makefile	/^SRCS	=	ft_atoi.c \\$/;"	m
+back	inc/push_swap.h	/^	struct s_elems	*back;$/;"	m	struct:s_elems	typeref:struct:s_elems::s_elems
+check	Libs/printf/ft_printf.c	/^static int	check(char const *s, va_list args, int caract)$/;"	f	file:
+check	src/push_swap.c	/^void	check(t_stack *a, t_stack *b)$/;"	f
+check_order	src/check.c	/^int	check_order(int argc, char **argv)$/;"	f
+content	Libs/Libft/libft.h	/^	void			*content;$/;"	m	struct:s_list
+count_words	Libs/Libft/ft_split.c	/^static int	count_words(const char *str, char c)$/;"	f	file:
+duplicated	src/check.c	/^int	duplicated(int argc, char **argv)$/;"	f
+first	inc/push_swap.h	/^	t_elems	*first;$/;"	m	struct:s_stack
+five_algor	src/threetofive.c	/^void	five_algor(t_stack *a, t_stack *b)$/;"	f
+four_algor	src/threetofive.c	/^void	four_algor(t_stack *a, t_stack *b)$/;"	f
+ft_at_b_stack	src/big_algor.c	/^void	ft_at_b_stack(t_stack *b, int idx, int cut)$/;"	f
+ft_atoi	Libs/Libft/ft_atoi.c	/^int	ft_atoi(const char *str)$/;"	f
+ft_backto_a	src/big_algor.c	/^void	ft_backto_a(t_stack *a, t_stack *b)$/;"	f
+ft_bzero	Libs/Libft/ft_bzero.c	/^void	ft_bzero(void *s, size_t n)$/;"	f
+ft_calloc	Libs/Libft/ft_calloc.c	/^void	*ft_calloc(size_t count, size_t size)$/;"	f
+ft_check_first	utils/pw_utils.c	/^ssize_t	ft_check_first(t_elems *first, ssize_t pos, int nbr)$/;"	f
+ft_check_maxint	utils/pw_utils.c	/^int	ft_check_maxint(int nbr)$/;"	f
+ft_check_node	utils/pw_utils.c	/^void	ft_check_node(t_elems *lst, t_stack *stack)$/;"	f
+ft_cleanstacks	utils/errors.c	/^void	ft_cleanstacks(t_stack *a, t_stack *b)$/;"	f
+ft_cond	Libs/printf/ft_printf.c	/^static int	ft_cond(char const c, va_list args, int count)$/;"	f	file:
+ft_error	utils/errors.c	/^	ft_error(int num)$/;"	f
+ft_get_maxidx	src/big_algor.c	/^int	ft_get_maxidx(t_stack *stack)$/;"	f
+ft_isalnum	Libs/Libft/ft_isalnum.c	/^int	ft_isalnum(int c)$/;"	f
+ft_isalpha	Libs/Libft/ft_isalpha.c	/^int	ft_isalpha(int c)$/;"	f
+ft_isascii	Libs/Libft/ft_isascii.c	/^int	ft_isascii(int c)$/;"	f
+ft_isdigit	Libs/Libft/ft_isdigit.c	/^int	ft_isdigit(int c)$/;"	f
+ft_isprint	Libs/Libft/ft_isprint.c	/^int	ft_isprint(int c)$/;"	f
+ft_issorted	utils/pw_utils.c	/^int	ft_issorted(t_elems *lst)$/;"	f
+ft_itoa	Libs/Libft/ft_itoa.c	/^char	*ft_itoa(int n)$/;"	f
+ft_len_magnitude	Libs/Libft/ft_itoa.c	/^static void	ft_len_magnitude(int n, int *len, int *mag)$/;"	f	file:
+ft_lstadd_back	Libs/Libft/ft_lstadd_back.c	/^void	ft_lstadd_back(t_list **lst, t_list *new)$/;"	f
+ft_lstadd_front	Libs/Libft/ft_lstadd_front.c	/^void	ft_lstadd_front(t_list **lst, t_list *new)$/;"	f
+ft_lstclear	Libs/Libft/ft_lstclear.c	/^void	ft_lstclear(t_list **lst, void (*del)(void*))$/;"	f
+ft_lstdelone	Libs/Libft/ft_lstdelone.c	/^void	ft_lstdelone(t_list *lst, void (*del)(void*))$/;"	f
+ft_lstiter	Libs/Libft/ft_lstiter.c	/^void	ft_lstiter(t_list *lst, void (*f)(void *))$/;"	f
+ft_lstlast	Libs/Libft/ft_lstlast.c	/^t_list	*ft_lstlast(t_list *lst)$/;"	f
+ft_lstmap	Libs/Libft/ft_lstmap.c	/^t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))$/;"	f
+ft_lstnew	Libs/Libft/ft_lstnew.c	/^t_list	*ft_lstnew(void *content)$/;"	f
+ft_lstsize	Libs/Libft/ft_lstsize.c	/^int	ft_lstsize(t_list *lst)$/;"	f
+ft_memchr	Libs/Libft/ft_memchr.c	/^void	*ft_memchr(const void *s, int c, size_t n)$/;"	f
+ft_memcmp	Libs/Libft/ft_memcmp.c	/^int	ft_memcmp(const void *s1, const void *s2, size_t n)$/;"	f
+ft_memcpy	Libs/Libft/ft_memcpy.c	/^void	*ft_memcpy(void *dst, const void *src, size_t n)$/;"	f
+ft_memmove	Libs/Libft/ft_memmove.c	/^void	*ft_memmove(void *dst, const void *src, size_t len)$/;"	f
+ft_memset	Libs/Libft/ft_memset.c	/^void	*ft_memset(void *s, int c, size_t len)$/;"	f
+ft_moves_director	utils/sort_utils.c	/^static int	ft_moves_director(t_stack *stack, int nbr, ssize_t *mov)$/;"	f	file:
+ft_pa	src/push.c	/^void	ft_pa(t_stack *a, t_stack *b)$/;"	f
+ft_pb	src/push.c	/^void	ft_pb(t_stack *a, t_stack *b)$/;"	f
+ft_print_char	Libs/printf/src/ft_print_char.c	/^int	ft_print_char(char const c, int count)$/;"	f
+ft_print_digits	Libs/printf/src/ft_print_digits.c	/^int	ft_print_digits(int n, int count)$/;"	f
+ft_print_hexa_low	Libs/printf/src/ft_print_hexa_low.c	/^int	ft_print_hexa_low(unsigned int hx, int count)$/;"	f
+ft_print_hexa_lower	Libs/printf/src/ft_print_pointers.c	/^int	ft_print_hexa_lower(unsigned long long hexa, int count)$/;"	f
+ft_print_hexa_up	Libs/printf/src/ft_print_hexa_up.c	/^int	ft_print_hexa_up(unsigned int hx, int count)$/;"	f
+ft_print_pointers	Libs/printf/src/ft_print_pointers.c	/^int	ft_print_pointers(void *ptr, int count)$/;"	f
+ft_print_str	Libs/printf/src/ft_print_str.c	/^int	ft_print_str(char const *s, int count)$/;"	f
+ft_print_unsigned	Libs/printf/src/ft_print_unsigned.c	/^int	ft_print_unsigned(unsigned int n, int count)$/;"	f
+ft_printf	Libs/printf/ft_printf.c	/^int	ft_printf(char const *s, ...)$/;"	f
+ft_push_dst	src/push.c	/^static void	ft_push_dst(t_stack *dst, t_elems *tmp)$/;"	f	file:
+ft_push_src	src/push.c	/^static void	ft_push_src(t_stack *src, t_elems *tmp)$/;"	f	file:
+ft_putchar_fd	Libs/Libft/ft_putchar_fd.c	/^void	ft_putchar_fd(char c, int fd)$/;"	f
+ft_putendl_fd	Libs/Libft/ft_putendl_fd.c	/^void	ft_putendl_fd(char *s, int fd)$/;"	f
+ft_putfirst_a	utils/sort_utils.c	/^void	ft_putfirst_a(t_stack *a, int nbr)$/;"	f
+ft_putfirst_b	utils/sort_utils.c	/^void	ft_putfirst_b(int nbr, t_stack *a, t_stack *b)$/;"	f
+ft_putfirst_b1_aux	utils/sort_utils.c	/^static void	ft_putfirst_b1_aux(t_stack *a, t_stack *b, int nbr, ssize_t mov)$/;"	f	file:
+ft_putfirst_b2_aux	utils/sort_utils.c	/^static void	ft_putfirst_b2_aux(t_stack *a, t_stack *b, int nbr, ssize_t mov)$/;"	f	file:
+ft_putnbr_fd	Libs/Libft/ft_putnbr_fd.c	/^void	ft_putnbr_fd(int n, int fd)$/;"	f
+ft_putstr_fd	Libs/Libft/ft_putstr_fd.c	/^void	ft_putstr_fd(char *s, int fd)$/;"	f
+ft_ra	src/rotate.c	/^void	ft_ra(t_stack *a)$/;"	f
+ft_rb	src/rotate.c	/^void	ft_rb(t_stack *b)$/;"	f
+ft_rotate_stack	src/rotate.c	/^static void	ft_rotate_stack(t_stack *stack)$/;"	f	file:
+ft_rr	src/rotate.c	/^void	ft_rr(t_stack *a, t_stack *b)$/;"	f
+ft_rra	src/rrotate.c	/^void	ft_rra(t_stack *a)$/;"	f
+ft_rrb	src/rrotate.c	/^void	ft_rrb(t_stack *b)$/;"	f
+ft_rrotate_stack	src/rrotate.c	/^static void	ft_rrotate_stack(t_stack *stack)$/;"	f	file:
+ft_rrr	src/rrotate.c	/^void	ft_rrr(t_stack *a, t_stack *b)$/;"	f
+ft_sa	src/swap.c	/^void	ft_sa(t_stack *a)$/;"	f
+ft_sb	src/swap.c	/^void	ft_sb(t_stack *b)$/;"	f
+ft_sort_aux	src/big_algor.c	/^void	ft_sort_aux(t_stack *a, t_stack *b, int cut)$/;"	f
+ft_sort_bigger	src/big_algor.c	/^void	ft_sort_bigger(t_stack *a, t_stack *b, int chunks)$/;"	f
+ft_split	Libs/Libft/ft_split.c	/^char	**ft_split(char const *s, char c)$/;"	f
+ft_ss	src/swap.c	/^void	ft_ss(t_stack *a, t_stack *b)$/;"	f
+ft_stack_push	src/push.c	/^static void	ft_stack_push(t_stack *dst, t_stack *src)$/;"	f	file:
+ft_stack_swap	src/swap.c	/^void	ft_stack_swap(t_stack *stack)$/;"	f
+ft_stackclear	utils/errors.c	/^void	ft_stackclear(t_stack *stack)$/;"	f
+ft_strchr	Libs/Libft/ft_strchr.c	/^char	*ft_strchr(const char *s, int c)$/;"	f
+ft_strdup	Libs/Libft/ft_strdup.c	/^char	*ft_strdup(const char *s1)$/;"	f
+ft_striteri	Libs/Libft/ft_striteri.c	/^void	ft_striteri(char *s, void (*f)(unsigned int, char *))$/;"	f
+ft_strjoin	Libs/Libft/ft_strjoin.c	/^char	*ft_strjoin(char const *s1, char const *s2)$/;"	f
+ft_strlcat	Libs/Libft/ft_strlcat.c	/^size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)$/;"	f
+ft_strlcpy	Libs/Libft/ft_strlcpy.c	/^size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)$/;"	f
+ft_strlen	Libs/Libft/ft_strlen.c	/^size_t	ft_strlen(const char *s)$/;"	f
+ft_strmapi	Libs/Libft/ft_strmapi.c	/^char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))$/;"	f
+ft_strncmp	Libs/Libft/ft_strncmp.c	/^int	ft_strncmp(const char *s1, const char *s2, size_t n)$/;"	f
+ft_strnstr	Libs/Libft/ft_strnstr.c	/^char	*ft_strnstr(const char *haystack, const char *needle, size_t len)$/;"	f
+ft_strrchr	Libs/Libft/ft_strrchr.c	/^char	*ft_strrchr(const char *s, int c)$/;"	f
+ft_strtrim	Libs/Libft/ft_strtrim.c	/^char	*ft_strtrim(char const *s1, char const *set)$/;"	f
+ft_substr	Libs/Libft/ft_substr.c	/^char	*ft_substr(char const *s, unsigned int start, size_t len)$/;"	f
+ft_tolower	Libs/Libft/ft_tolower.c	/^int	ft_tolower(int c)$/;"	f
+ft_toupper	Libs/Libft/ft_toupper.c	/^int	ft_toupper(int c)$/;"	f
+ft_while_isdigit	utils/pw_utils.c	/^int	ft_while_isdigit(char *str)$/;"	f
+idx	inc/push_swap.h	/^	int				idx;$/;"	m	struct:s_elems
+indexer	src/init_stacks.c	/^void	indexer(t_stack *stack)$/;"	f
+init_stack_a	src/init_stacks.c	/^void	init_stack_a(t_stack *a, int argc, char **argv)$/;"	f
+init_stack_b	src/init_stacks.c	/^void	init_stack_b(t_stack *b)$/;"	f
+is_digit	src/check.c	/^int	is_digit(int argc, char **argv)$/;"	f
+last	inc/push_swap.h	/^	t_elems	*last;$/;"	m	struct:s_stack
+len	inc/push_swap.h	/^	int		len;$/;"	m	struct:s_stack
+limit	Libs/Libft/ft_atoi.c	/^static int	limit(long long n, const char *s, int sign)$/;"	f	file:
+main	src/push_swap.c	/^int	main(int argc, char **argv)$/;"	f
+malloc_error	Libs/Libft/ft_split.c	/^char	**malloc_error(char **new, int j)$/;"	f
+newnode	src/init_stacks.c	/^t_elems	*newnode(int nbr)$/;"	f
+next	Libs/Libft/libft.h	/^	struct s_list	*next;$/;"	m	struct:s_list	typeref:struct:s_list::s_list
+next	inc/push_swap.h	/^	struct s_elems	*next;$/;"	m	struct:s_elems	typeref:struct:s_elems::s_elems
+s_elems	inc/push_swap.h	/^typedef struct s_elems$/;"	s
+s_list	Libs/Libft/libft.h	/^typedef struct s_list$/;"	s
+s_stack	inc/push_swap.h	/^typedef struct s_stack$/;"	s
+t_elems	inc/push_swap.h	/^}					t_elems;$/;"	t	typeref:struct:s_elems
+t_list	Libs/Libft/libft.h	/^}	t_list;$/;"	t	typeref:struct:s_list
+t_stack	inc/push_swap.h	/^}			t_stack;$/;"	t	typeref:struct:s_stack
+three_algor	src/threetofive.c	/^void	three_algor(t_stack *a)$/;"	f
+val	inc/push_swap.h	/^	int				val;$/;"	m	struct:s_elems
+valid_param	src/check.c	/^void	valid_param(int argc, char **argv)$/;"	f
+word_len	Libs/Libft/ft_split.c	/^static int	word_len(const char *str, int i, char c)$/;"	f	file:

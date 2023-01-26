@@ -6,7 +6,7 @@
 /*   By: jsebasti <jsebasti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/18 17:33:20 by jsebasti          #+#    #+#             */
-/*   Updated: 2022/12/01 19:53:55 by jsebasti         ###   ########.fr       */
+/*   Updated: 2023/01/26 10:28:14 by jsebasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,7 +73,7 @@ void	indexer(t_stack *stack)
 
 	current = stack->first;
 	ind2 = -1;
-	while (ind2 < stack->len)
+	while (++ind2 < stack->len)
 	{
 		ind1 = 0;
 		tmp = stack->first;

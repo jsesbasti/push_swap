@@ -6,7 +6,7 @@
 /*   By: jsebasti <jsebasti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/22 15:34:31 by jsebasti          #+#    #+#             */
-/*   Updated: 2022/12/01 19:53:48 by jsebasti         ###   ########.fr       */
+/*   Updated: 2023/01/26 16:14:08 by jsebasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,13 +48,20 @@ void	four_algor(t_stack *a, t_stack *b)
 
 void	five_algor(t_stack *a, t_stack *b)
 {
-	ft_putfirst_a(a, 0);
-	if (!ft_issorted(a->first))
-		return ;
+	if (a->first->idx == 3)
+		ft_pb(a, b);
+	ft_putfirst_a(a, 4);
 	ft_pb(a, b);
-	ft_putfirst_a(a, 1);
-	ft_pb(a, b);
+	if (b->len == 1)
+	{
+		ft_putfirst_a(a, 3);
+		ft_pb(a, b);
+	}
+	else
+		ft_sb(b);
 	three_algor(a);
 	ft_pa(a, b);
+	ft_ra(a);
 	ft_pa(a, b);
+	ft_ra(a);
 }

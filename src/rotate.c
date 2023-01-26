@@ -6,7 +6,7 @@
 /*   By: jsebasti <jsebasti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/19 12:42:57 by jsebasti          #+#    #+#             */
-/*   Updated: 2023/01/25 05:35:40 by jsebasti         ###   ########.fr       */
+/*   Updated: 2023/01/25 06:33:36 by jsebasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ void	ft_ra(t_stack *a)
 	if (a->len > 1)
 	{
 		ft_rotate_stack(a);
-		if (ft_printf("%s", INS_RA) == ERR_NUM)
+		if (ft_printf("%s", INS_RA) == -1)
 			ft_cleanstacks(a, NULL);
 	}
 }
@@ -43,7 +43,7 @@ void	ft_rb(t_stack *b)
 	if (b->len > 1)
 	{
 		ft_rotate_stack(b);
-		if (ft_printf("%s", INS_RB) == ERR_NUM)
+		if (ft_printf("%s", INS_RB) == -1)
 			ft_cleanstacks(NULL, b);
 	}
 }
@@ -54,7 +54,7 @@ void	ft_rr(t_stack *a, t_stack *b)
 	{
 		ft_rotate_stack(a);
 		ft_rotate_stack(b);
-		if (ft_printf("%s", INS_RR) == ERR_NUM)
+		if (ft_printf("%s", INS_RR) == -1)
 			ft_cleanstacks(a, b);
 	}
 }

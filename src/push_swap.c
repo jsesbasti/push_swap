@@ -6,7 +6,7 @@
 /*   By: jsebasti <jsebasti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/12 17:16:10 by jsebasti          #+#    #+#             */
-/*   Updated: 2022/12/01 19:53:51 by jsebasti         ###   ########.fr       */
+/*   Updated: 2023/01/25 14:33:20 by jsebasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ int	main(int argc, char **argv)
 	t_stack	b;
 
 	if (argc <= 1)
-		return (ERRCODE0);
+		return (0);
 	valid_param(argc, argv);
 	init_stack_a(&a, argc, argv);
 	init_stack_b(&b);

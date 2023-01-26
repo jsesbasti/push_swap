@@ -6,7 +6,7 @@
 /*   By: jsebasti <jsebasti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/19 12:39:41 by jsebasti          #+#    #+#             */
-/*   Updated: 2023/01/25 05:35:00 by jsebasti         ###   ########.fr       */
+/*   Updated: 2023/01/25 14:38:26 by jsebasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ void	ft_pa(t_stack *a, t_stack *b)
 	if (b->len == 0)
 		return ;
 	ft_stack_push(a, b);
-	if (ft_printf("%s", INS_PA) == ERR_NUM)
+	if (ft_printf("%s", INS_PA) == -1)
 		ft_cleanstacks(a, b);
 }
 
@@ -69,6 +69,6 @@ void	ft_pb(t_stack *a, t_stack *b)
 	if (a->len == 0)
 		return ;
 	ft_stack_push(b, a);
-	if (ft_printf("%s", INS_PB) == ERR_NUM)
+	if (ft_printf("%s", INS_PB) == -1)
 		ft_cleanstacks(a, b);
 }

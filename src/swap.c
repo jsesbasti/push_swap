@@ -6,7 +6,7 @@
 /*   By: jsebasti <jsebasti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 22:47:20 by jsebasti          #+#    #+#             */
-/*   Updated: 2023/01/25 05:38:51 by jsebasti         ###   ########.fr       */
+/*   Updated: 2023/01/25 06:35:00 by jsebasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ void	ft_stack_swap(t_stack *stack)
 void	ft_sa(t_stack *a)
 {
 	ft_stack_swap(a);
-	if (ft_printf("%s", INS_SA) == ERR_NUM)
+	if (ft_printf("%s", INS_SA) == -1)
 		ft_cleanstacks(a, NULL);
 }
 
@@ -50,7 +50,7 @@ void	ft_sb(t_stack *b)
 	aux = b->first;
 	b->first = b->first->next;
 	b->first->next = aux;
-	if (ft_printf("%s", INS_SB) == ERR_NUM)
+	if (ft_printf("%s", INS_SB) == -1)
 		ft_cleanstacks(b, NULL);
 }
 
@@ -61,7 +61,7 @@ void	ft_ss(t_stack *a, t_stack *b)
 	{
 		ft_stack_swap(a);
 		ft_stack_swap(b);
-		if (ft_printf("%s", INS_SS) == ERR_NUM)
+		if (ft_printf("%s", INS_SS) == -1)
 			ft_cleanstacks(a, b);
 	}
 }
