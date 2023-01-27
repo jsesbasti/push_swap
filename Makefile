@@ -6,7 +6,7 @@
 #    By: jsebasti <jsebasti@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/12 17:21:25 by jsebasti          #+#    #+#              #
-#    Updated: 2023/01/26 12:09:40 by jsebasti         ###   ########.fr        #
+#    Updated: 2023/01/27 14:07:07 by jsebasti         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -59,7 +59,7 @@ all:
 	@$(MAKE) -C $(PRINTF_M)
 	@$(MAKE) $(NAME)
 
-$(NAME):: $(OBJ) 
+$(NAME):: $(OBJ) $(LIB) $(PRINTF)
 	$(CC) $(CFLAGS) $(OBJ) $(LIB) $(PRINTF) -o $(NAME)
 
 $(NAME)::

@@ -51,7 +51,7 @@ PRINTF	Makefile	/^PRINTF		= Libs\/printf\/libftprintf.a$/;"	m
 PRINTF_M	Makefile	/^PRINTF_M	= Libs\/printf\/$/;"	m
 PUSH_SWAP_H	inc/push_swap.h	14;"	d
 PW_HEADER	Makefile	/^PW_HEADER	= $(INC_DIR)\/push_swap.h$/;"	m
-RM	Libs/Libft/Makefile	/^RM	= 	rm -rf$/;"	m
+RM	Libs/Libft/Makefile	/^RM	= 	rm -f$/;"	m
 RM	Libs/printf/Makefile	/^RM = rm -rf$/;"	m
 RM	Makefile	/^RM = rm -rf$/;"	m
 ROTATE	inc/moves.h	30;"	d
@@ -79,7 +79,7 @@ ft_check_maxint	utils/pw_utils.c	/^int	ft_check_maxint(int nbr)$/;"	f
 ft_check_node	utils/pw_utils.c	/^void	ft_check_node(t_elems *lst, t_stack *stack)$/;"	f
 ft_cleanstacks	utils/errors.c	/^void	ft_cleanstacks(t_stack *a, t_stack *b)$/;"	f
 ft_cond	Libs/printf/ft_printf.c	/^static int	ft_cond(char const c, va_list args, int count)$/;"	f	file:
-ft_error	utils/errors.c	/^	ft_error(int num)$/;"	f
+ft_error	utils/errors.c	/^void	ft_error(int num)$/;"	f
 ft_get_maxidx	src/big_algor.c	/^int	ft_get_maxidx(t_stack *stack)$/;"	f
 ft_isalnum	Libs/Libft/ft_isalnum.c	/^int	ft_isalnum(int c)$/;"	f
 ft_isalpha	Libs/Libft/ft_isalpha.c	/^int	ft_isalpha(int c)$/;"	f

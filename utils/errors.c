@@ -6,7 +6,7 @@
 /*   By: jsebasti <jsebasti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/26 14:17:45 by jsebasti          #+#    #+#             */
-/*   Updated: 2023/01/25 08:12:21 by jsebasti         ###   ########.fr       */
+/*   Updated: 2023/01/27 14:49:59 by jsebasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,16 +36,15 @@ void	ft_cleanstacks(t_stack *a, t_stack *b)
 	ft_error(3);
 }
 
-void
-	ft_error(int num)
+void	ft_error(int num)
 {
 	if (num == 0)
-		ft_printf("Error\n");
+		write(2, "Error\n", 6);
 	else if (num == 1)
-		ft_printf("Invalid Input\n");
+		write(2, "Error\n", 6);
 	else if (num == 2)
-		ft_printf("No node created\n");
+		write(2, "Error\n", 6);
 	else if (num == 3)
-		ft_printf("Movment error\n");
+		write(2, "Error\n", 6);
 	exit(EXIT_FAILURE);
 }

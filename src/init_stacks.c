@@ -6,7 +6,7 @@
 /*   By: jsebasti <jsebasti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/18 17:33:20 by jsebasti          #+#    #+#             */
-/*   Updated: 2023/01/26 10:28:14 by jsebasti         ###   ########.fr       */
+/*   Updated: 2023/01/27 14:41:11 by jsebasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,18 @@ t_elems	*newnode(int nbr)
 	return (new);
 }
 
+t_elems	*check_newnode(char *arg)
+{
+	int		check;
+	t_elems	*lst;
+
+	check = 0;
+	if (ft_atoi(arg, &check) < 1)
+		return (NULL);
+	lst = newnode(check);
+	return (lst);
+}
+
 void	init_stack_a(t_stack *a, int argc, char **argv)
 {
 	t_elems	*lst;
@@ -40,7 +52,8 @@ void	init_stack_a(t_stack *a, int argc, char **argv)
 	lst = NULL;
 	while (++a->len < argc - 1)
 	{
-		lst = newnode(ft_atoi(argv[a->len + 1]));
+		lst = check_newnode(argv[a->len + 1]);
+//		lst = newnode(ft_atoi(argv[a->len + 1], NULL));
 		ft_check_node(lst, a);
 		if (!a->last)
 		{

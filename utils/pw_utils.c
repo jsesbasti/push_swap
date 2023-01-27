@@ -6,7 +6,7 @@
 /*   By: jsebasti <jsebasti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/26 14:16:28 by jsebasti          #+#    #+#             */
-/*   Updated: 2023/01/25 15:01:37 by jsebasti         ###   ########.fr       */
+/*   Updated: 2023/01/27 14:15:02 by jsebasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,10 +36,10 @@ int	ft_while_isdigit(char *str)
 	int	i;
 
 	i = 0;
-	if ((str[i + 1] && str[i] == '-') || (str[i + 1] && str[i] == '+'))
-		i++;
 	if (!str)
 		return (0);
+	if ((str[i + 1] && str[i] == '-') || (str[i + 1] && str[i] == '+'))
+		i++;
 	while (str[i])
 	{
 		if (!ft_isdigit(str[i]))

@@ -6,7 +6,7 @@
 /*   By: jsebasti <jsebasti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/12 17:16:10 by jsebasti          #+#    #+#             */
-/*   Updated: 2023/01/25 14:33:20 by jsebasti         ###   ########.fr       */
+/*   Updated: 2023/01/27 15:37:17 by jsebasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,8 @@ int	main(int argc, char **argv)
 
 	if (argc <= 1)
 		return (0);
+	if (argc == 2 && argv[1][0] == '\0')
+		ft_error(0);
 	valid_param(argc, argv);
 	init_stack_a(&a, argc, argv);
 	init_stack_b(&b);
