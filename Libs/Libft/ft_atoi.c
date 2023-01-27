@@ -6,12 +6,11 @@
 /*   By: jsebasti <jsebasti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/25 19:03:19 by jsebasti          #+#    #+#             */
-/*   Updated: 2023/01/27 16:49:48 by jsebasti         ###   ########.fr       */
+/*   Updated: 2023/01/27 16:57:55 by jsebasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static int	limit(long long n, const char *s, int sign)
 {
